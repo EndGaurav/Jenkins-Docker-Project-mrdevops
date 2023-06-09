@@ -1,6 +1,6 @@
 FROM  ubuntu:latest
 MAINTAINER vikashashoke@gmail.com
-RUN sudo apt install -y apache2 \
+RUN sudo apt update && sudo apt install -y apache2 \
  zip\
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
